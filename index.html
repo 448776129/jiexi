@@ -66,17 +66,34 @@
             line-height: 500px;
 
         }
+        li{
+            list-style-type:none;
+        }
+        .shuo{
+            background-color: darkgrey;
+        }
 
         /* .zhu{
             position: absolute;
             top: 100px;
             left: 100px;
         }
+        
          */
     </style>
 
     <title>视频解析系统</title>
 </head>
+<!--  解析接口！！！
+http://okjx.cc/?url=
+https://www.8090.la/8090/?url=
+
+jsap.attakids.com/?url=
+https://jx.ergan.top/?url=
+
+
+-->
+
 
 <body>
     <div class="zhu">
@@ -85,7 +102,7 @@
             // var jiexi = prompt('请输入解析地址') 
             function addParam() {
                 var objA = document.getElementById("a1");
-                objA.href = 'https://www.8090.la/8090/?url=' + document.getElementById("InputText").value;
+                objA.href = 'http://okjx.cc/?url=' + document.getElementById("InputText").value;
             }
         </script>
         </script>
@@ -99,7 +116,7 @@
             // var jiexi = prompt('请输入解析地址') 
             function addParam2() {
                 var objA = document.getElementById("a2");
-                objA.href = 'https://jx.ergan.top/?url=' + document.getElementById("InputText2").value;
+                objA.href = 'jsap.attakids.com/?url=' + document.getElementById("InputText2").value;
             }
         </script>
         </script>
@@ -123,12 +140,28 @@
     </div>
 
     <div class="wenzi">
-        <p style=" font-size: 30px; color: rgb(138, 90, 90); background: darkgrey;">本系统支持
-            哔哩哔哩、优酷、爱奇艺、腾讯视频、芒果视频等主流网站视频，包括vip收费视频解析。</p>
+        <p style=" font-size: 22px; color: rgb(158, 31, 31); background: darkgrey;">点击" 点我播放 "按钮后,等待视频加载完成后请 "手动点击播放按钮" ，视频不会自动播放</p>
+        <p style=" font-size: 18px; color: rgb(138, 90, 90); background: darkgrey;">本系统支持
+            哔哩哔哩、优酷、爱奇艺、腾讯视频、芒果视频等主流网站视频，包括vip收费视频解析。
+        第一个接口更清晰，第三个速度更快</p>
+        
         <img src="" alt="">
         <img src="" alt="">
         <img src="" alt="">
 
+    </div>
+    <div class="shuo" style="">
+        <p>
+            <ul>
+            <li>
+            VIP视频解析说明</li>
+            <li> 操作指南</li>
+            <li>第 一 步 进入各大视频网站，找到想要观看的VIP视频，然后复制链接（浏览器上的视频地址）</li>
+                <li> 第 二 步 将复制的链接粘贴到本站播放地址，并点击开始解析</li>
+                    <li>第 三 步 等待解析完成，即可免费观看VIP视频</li>
+                        <li> 想要找会员电影免费看，下方搜索电影名，复制地址过来解析，就能免费观看vip付费电影电视剧</li>
+                    </ul>
+        </p>
     </div>
 
 
