@@ -42,7 +42,176 @@
             -webkit-background-size: cover; */
 
 
+<!DOCTYPE html>
+<html lang="cn">
 
+<head>
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0"> -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <script>
+        !(function (win, doc) {
+            function setFontSize() {
+                var winWidth = window.innerWidth;
+                doc.documentElement.style.fontSize = (winWidth / 1262) * 100+ 'px';
+            }
+            var evt = 'onorientationchange' in win ? 'orientationchange' : 'resize';
+            var timer = null;
+            win.addEventListener(evt, function () {
+                clearTimeout(timer);
+                timer = setTimeout(setFontSize, 300);
+            }, false);
+            win.addEventListener("pageshow", function (e) {
+                if (e.persisted) {
+                    clearTimeout(timer);
+                    timer = setTimeout(setFontSize, 300);
+                }
+            }, false);
+            setFontSize();
+        }(window, document));
+    </script> -->
+    <style type="text/css">
+        body {
+            background-image: url(http://img.xjh.me/random_img.php?type=bg&ctype=nature&return=302);
+            border: none;
+            outline: none;
+            background-attachment: fixed;
+
+            background-repeat: no-repeat;
+
+            background-size: cover;
+
+            /* -moz-background-size: cover;
+
+            -webkit-background-size: cover; */
+
+
+
+
+        }
+
+        a {
+            text-decoration-line: none;
+            color: rgb(68, 97, 22);
+            font-size: 20px;
+            background: rgb(167, 230, 230);
+        }
+
+        input {
+            border-left: #fff 1px solid;
+            border-top: #fff 1px solid;
+            border-right: #fff 1px solid;
+            border-bottom: #fff 1px solid;
+            margin: 100px 0px 40px 90px;
+            padding-left: 20px;
+            background: rgb(176, 237, 241);
+            width: 200px;
+            height: 30px;
+            line-height: 500px;
+
+        }
+        li{
+            list-style-type:none;
+        }
+        .shuo{
+            background-color: darkgrey;
+        }
+
+        /* .zhu{
+            position: absolute;
+            top: 100px;
+            left: 100px;
+        }
+        
+         */
+    </style>
+
+    <title>视频解析系统</title>
+</head>
+<!--  解析接口！！！
+http://okjx.cc/?url=
+https://www.8090.la/8090/?url=
+
+jsap.attakids.com/?url=
+https://jx.ergan.top/?url=
+
+
+-->
+
+
+<body>
+    <div class="zhu">
+        <!-- <input name="注册" type="button" id="btn1" title="登注册" value="注册"  onclick="location.href='链接写这里'" /> -->
+        <script language="javascript">
+            // var jiexi = prompt('请输入解析地址') 
+            function addParam() {
+                var objA = document.getElementById("a1");
+                objA.href = 'https://vip.parwix.com:4433/player/?url=' + document.getElementById("InputText").value;
+            }
+        </script>
+        </script>
+        <input name="InputText" type="text" id="InputText" placeholder="请输入视频地址">
+        <a id="a1" href="a1" onclick="addParam()" target="_blank"> 点我播放 ① <img src="" alt=""></a>
+        <!--8090解析-->
+        <br>
+        <!-- ------------------------------------------------- -->
+
+        <script language="javascript">
+            // var jiexi = prompt('请输入解析地址') 
+            function addParam2() {
+                var objA = document.getElementById("a2");
+                objA.href = 'https://jsap.attakids.com/?url=' + document.getElementById("InputText2").value;
+            }
+        </script>
+        </script>
+        <input name="InputText2" type="text" id="InputText2" placeholder="请输入视频地址">
+        <a id="a2" href="a2" onclick="addParam2()" target="_blank"> 点我播放 ②</a>
+        <br>
+
+        <!-- ------------------------------------------------- -->
+        <script language="javascript">
+            // var jiexi = prompt('请输入解析地址') 
+            function addParam3() {
+                var objA = document.getElementById("a3");
+                objA.href = 'http://okjx.cc/?url=' + document.getElementById("InputText3").value;
+            }
+        </script>
+        </script>
+        <input name="InputText3" type="text" id="InputText3" placeholder="请输入视频地址">
+        <a id="a3" href="a3" onclick="addParam3()" target="_blank"> 点我播放 ③</a>
+
+
+    </div>
+
+    <div class="wenzi">
+        <p style=" font-size: 22px; color: rgb(158, 31, 31); background: darkgrey;">点击" 点我播放 "按钮后,等待视频加载完成后请 "手动点击播放按钮" ，视频不会自动播放</p>
+        <p style=" font-size: 18px; color: rgb(138, 90, 90); background: darkgrey;">本系统支持
+            哔哩哔哩、优酷、爱奇艺、腾讯视频、芒果视频等主流网站视频，包括vip收费视频解析。
+        第一个接口更清晰，第三个速度更快</p>
+        
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+
+    </div>
+    <div class="shuo" style="">
+        <p>
+            <ul>
+            <li>
+            VIP视频解析说明</li>
+            <li> 操作指南</li>
+            <li>第 一 步 进入各大视频网站，找到想要观看的VIP视频，然后复制链接（浏览器上的视频地址）</li>
+                <li> 第 二 步 将复制的链接粘贴到本站播放地址，并点击开始解析</li>
+                    <li>第 三 步 等待解析完成，即可免费观看VIP视频</li>
+                        <li> 想要找会员电影免费看，下方搜索电影名，复制地址过来解析，就能免费观看vip付费电影电视剧</li>
+                    </ul>
+        </p>
+    </div>
+
+
+</body>
+
+</html>
 
         }
 
