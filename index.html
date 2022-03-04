@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>视频解析系统Ⅱ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main w">
+        <div class="lf">
+            <div class="video1">
+                <script language="javascript">
+
+                    function addParam1() {
+                        var objA = document.getElementById("a1");
+                        objA.href = 'https://vip.parwix.com:4433/player/?url=' + document.getElementById("b1").value;
+                    }
+                </script>
+                <input name="InputText" type="text" id="b1" placeholder="请输入视频地址">
+                <a id="a1" href="a1" onclick="addParam1()" target="_blank"> 播放</a>
+            </div>
+            <div class="video2">
+                <script language="javascript">
+
+                    function addParam2() {
+                        var objA = document.getElementById("a2");
+                        objA.href = 'https://okjx.cc/?url=' + document.getElementById("b2").value;
+                    }
+                </script>
+                <!-- ok解析 -->
+                <input name="InputText" type="text" id="b2" placeholder="请输入视频地址">
+                <a id="a2" href="a2" onclick="addParam2()" target="_blank"> 播放</a>
+
+            </div>
+            <div class="video3">
+                <script language="javascript">
+
+                    function addParam3() {
+                        var objA = document.getElementById("a3");
+                        objA.href = 'https://jx.xmflv.com/?url=' + document.getElementById("b3").value;
+                    }
+                </script>
+                <!-- 虾米解析 -->
+                <input name="InputText" type="text" id="b3" placeholder="请输入视频地址">
+                <a id="a3" href="a3" onclick="addParam3()" target="_blank"> 播放</a>
+
+            </div>
+        </div>
+        <div class="rg">
+            <div class="video4">
+                <script language="javascript">
+
+                    function addParam4() {
+                        var objA = document.getElementById("a4");
+                        objA.href = 'https://www.8090.la/8090/?url=' + document.getElementById("b4").value;
+                    }
+                </script>
+                <!-- 8090 解析 -->
+                <input name="InputText" type="text" id="b4" placeholder="请输入视频地址">
+                <a id="a4" href="a4" onclick="addParam4()" target="_blank"> 播放 </a>
+
+            </div>
+            <div class="video5">
+                <script language="javascript">
+
+                    function addParam5() {
+                        var objA5 = document.getElementById("a5");
+                        objA5.href = 'https://jsap.ahfuqi.net/?url=' + document.getElementById("b5").value;
+                    }
+                </script>
+                <!--其他稳定解析 -->
+                <input name="InputText" type="text" id="b5" placeholder="请输入视频地址">
+                <a id="a5" href="a5" onclick="addParam5()" target="_blank"> 播放 </a>
+
+            </div>
+            <div class="video6">
+                <script language="javascript">
+
+                    function addParam6() {
+                        var objA6 = document.getElementById("a6");
+                        objA6.href = 'https://jx.aidouer.net/?url=' + document.getElementById("b6").value;
+                    }
+                </script>
+                <!-- 其他解析 -->
+                <input name="InputText" type="text" id="b6" placeholder="请输入视频地址">
+                <a id="a6" href="a6" onclick="addParam6()" target="_blank"> 播放 </a>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
