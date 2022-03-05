@@ -52,6 +52,12 @@ input:hover {
     border-right: 5px #fff solid;
     float: left;
     border-radius: 8px;
+    -webkit-filter: blur(0.21px);
+    -moz-filter: blur(0.21px);
+    -ms-filter: blur(0.21px);
+    -o-filter: blur(0.2px);
+    filter: blur(0.2px);
+    filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=4, MakeShadow=false);
 }
 
 /* -------分割线----- */
@@ -70,6 +76,12 @@ input:hover {
     width: 270px;
     float: left;
     border-radius: 8px;
+    -webkit-filter: blur(0.21px);
+    -moz-filter: blur(0.21px);
+    -ms-filter: blur(0.21px);
+    -o-filter: blur(0.2px);
+    filter: blur(0.2px);
+    filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=4, MakeShadow=false);
 }
 
 /* 所有video里面的A标签 */
@@ -117,7 +129,9 @@ input:hover {
 .foot>ul>li>a {
     transition: all 0.5s;
     color: #fff
-}.foot>ul>li>a:hover {
+}
+
+.foot>ul>li>a:hover {
     display: block;
     /* width: 65px; */
     height: 20px;
