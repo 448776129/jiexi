@@ -51,6 +51,7 @@ input:hover {
     width: 270px;
     border-right: 5px #fff solid;
     float: left;
+    border-radius: 8px;
 }
 
 /* -------分割线----- */
@@ -68,6 +69,7 @@ input:hover {
     height: 500px;
     width: 270px;
     float: left;
+    border-radius: 8px;
 }
 
 /* 所有video里面的A标签 */
@@ -103,4 +105,22 @@ input:hover {
 
 .video1>a:hover, .video2>a:hover, .video3>a:hover {
     box-shadow: 0 0 5px 5px #cc8432;
+}
+
+.foot>ul>li {
+    list-style: none;
+    float: left;
+    padding: 0 30px;
+    color: #fff
+}
+
+.foot>ul>li>a {
+    transition: all 0.5s;
+    color: #fff
+}.foot>ul>li>a:hover {
+    display: block;
+    /* width: 65px; */
+    height: 20px;
+    background-color: #d9d5df;
+    color: aqua;
 }
