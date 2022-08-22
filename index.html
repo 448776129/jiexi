@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>视频在线解析系统3.0</title>
+    <style>
+        body {
+            background: url(https://api.dujin.org/pic/fengjing) no-repeat fixed;
+            background-size: cover;
+        }
+
+        .main {
+            position: relative;
+            /* width: 1200px; */
+            width: 100%;
+        }
+
+        .video {
+            /* width: 800px; */
+            width: 60%;
+            height: 420px;
+            background-color: rgb(105, 123, 139);
+            margin: 50px auto;
+        }
+
+        .video iframe {
+            width: 100%;
+            height: 420px;
+        }
+
+        .select {
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, 0);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="video">
+            <iframe
+                src="https://jx.bozrc.com:4433/player/analysis.php?v=https://www.iqiyi.com/v_1txy0k8sdqc.html?vfrm=pcw_home&vfrmblk=B&vfrmrst=fcs_0_p11"
+                frameborder="0" allowfullscreen scrolling="auto "></iframe>
+        </div>
+        <div class="select">
+            <input type="text" class="videoUrl" placeholder="视频地址">
+            <select name="select" id="select">
+
+            </select>
+            <button class="btn mdui-btn mdui-color-theme-accent mdui-ripple">播放</button>
+        </div>
+    </div>
+    <script>
+        let main = document.querySelector('.main');
+        let video = main.children[0]; //播放窗口
+        let videoUrl = main.children[1].children[0]; //输入框
+        let select = main.querySelector('#select'); //下拉框
+        let option = select.querySelectorAll('option'); //所有下拉框内容
+        // console.log(option);
+        let btn = main.querySelector('.btn'); //播放按钮
+        let videoapi = ['https://jx.bozrc.com:4433/player/analysis.php?v=', 'https://yparse.jn1.cc/index.php?url=',
+            'https://okjx.cc/?url=', 'https://jx.xmflv.com/?url='
+        ]; //存放解析接口
+        for (let i = 0; i < videoapi.length; i++) {
+            // 给seleect创建下拉选项 option
+            let option = document.createElement('option');
+            // 添加
+            select.appendChild(option);
+            // 给下拉框新增元素属性
+            select.children[i].setAttribute('date-videoapi', videoapi[i]);
+            select.children[i].innerHTML = '地址' + (i + 1);
+            btn.addEventListener('click', function () {
+                var x = document.getElementById("select").selectedIndex;
+                //  获取输入框内容
+                let videourl = videoUrl.value;
+                // console.log(videourl);
+                let api = select.getElementsByTagName("option")[x].getAttribute('date-videoapi');
+                video.children[i].src = api + videourl;
+            })
+        }
+
+        function ddd() {
+
+            // alert();
+            // console.log(document.getElementsByTagName("option")[x].getAttribute('date-videoapi'));
+        }
+        // ddd();
+    </script>
+</body>
+
+</html>
